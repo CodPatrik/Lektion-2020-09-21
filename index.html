@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listor</title>
+
+    <link rel="stylesheet" href="styles.css"> <!--Kopplar ihop detta dokument med en 
+                                                  extern CSS fil som heter styles.css 
+                                              -->
+    <script src="script.js"></script>   <!--Kopplar ihop detta dokument med en 
+                                            extern Javascript fil som heter script.js 
+                                        -->
+</head>
+<body>
+   
+    <!-- Nu ritar jag något på pappret som ser ut som följande-->
+
+    <div id="box" onclick="hit()"></div>
+    
+    <!-- <div> är en tagg eller mer korrekt ett element 
+         som läggs in på en sida.
+
+         För att senare kunna komma åt detta element i minnet så måste
+         man veta adressen dit. 
+         "Precis som när man ska skicka ett brev till någon
+          måste man veta deras adress"
+        
+         Här kan vi själva hitta på ett namn som vi kan använda som
+         adress för att komma åt elementet.
+         
+         Detta gör man genom att skriva id="Namnet som du hittat på";
+         
+         i fallet ovan är namnet = box.
+
+         Om man sedan vill koppla en händelse till elementet tex.
+         som vi här kopplar till onclick  som betyder precis som det låter
+         när någon klickar på mig.
+          
+         onclick="hit()";  läses så här.
+
+         Om någon klickar på mig ska jag köra en funktion som heter hit;
+
+         Givetvis måste man då deklarera en funktion som heter hit i son javascript kod.
+
+         Och i den funktionen beskriva vad som ska hända.
+
+    -->
+
+
+    <!--
+        Nytt i denna lektion är att man kan oxå beskriva hur detta element ska visas på sidan.
+
+        Det finns något som heter CSS och det är en teknik som har som syfte att beskriva
+        var på skärmen saker ska hamna och hur stora dom ska vara och vilkenfärg dom ska ha
+        vilketn färg och storlek på en text etc.
+
+        Ett "stil-recept" brukar jag kalla det för.
+
+        Varje element kan ha ett stilrecept och recepten kan vcara unika för ett element
+        eller kan flera element ha samma "stil-recept" tex. om man ska visa 
+        30 annonser med olika innehåll men alla ska ha text o bilder på samma ställen.
+         
+        Av någon underlig anledning har man kallt detta för class i CSS.
+        Något som absolut inte har något att göra med classer i programmering.
+
+        class = "Namn på ett recept";   // Detta går att återanvända
+     
+        i sin CSS kod kan man sedan beskriva innehållet i varje recept.
+
+        börjar receptet men en . så är det en class och kan återanvändas.
+        .mittRecept{
+            top:10px;
+            left:10px;
+        }
+
+        börjar receptet med # är det elementets id namn som används istället
+        och detta är ett unikt namn för bara det elementet och det går således 
+        inte att återanvända.
+        
+        #mittRecept{  
+            top:10px;
+            left:10px;
+        }
+
+
+
+    -->
+
+
+</body>
+</html>
